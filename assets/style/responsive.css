@@ -9,20 +9,6 @@
     .disco img {
         width: 50% !important;
     }
-}
-
-@media screen and (max-width: 576px){
-    aside {
-        display: none !important;
-    }
-
-    nav a {
-        font-size: 0.8rem !important;
-    }
-    #discover {
-        max-width: 100%;
-    }
-
     .formule, .guide, .contact {
         flex-direction: column;
     }
@@ -33,6 +19,20 @@
 
     .reseau, .form {
         max-width: 100% !important;
+    }
+}
+
+@media screen and (max-width: 576px){
+    aside {
+        display: none !important;
+    }
+
+    nav a {
+        font-size: 0.8rem !important;
+    }
+    
+    #discover {
+        max-width: 100%;
     }
 }
 
