@@ -1,0 +1,291 @@
+/* GLOBAL */
+
+@import url('responsive.css');
+
+@font-face {
+    font-family: 'Bright';
+    src :url(../fonts/Bright.otf) format('otf');  
+}
+
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+:root{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:white;
+    background-color: rgb(9, 9, 9);
+}
+
+body {
+    margin: 0;
+}
+
+.conteneur {
+    display:flex;
+    flex-direction: column;
+    background-image: url("../img/header.jpeg");
+    background-size: 100%;
+    background-color: rgb(9, 9, 9);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: top center ;
+}
+
+/* NAVBAR */
+
+header {
+    display: flex;
+    align-items: center;
+    background: linear-gradient(rgb(14, 14, 14), rgb(24, 24, 24));
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+header h1 {
+    color: white;
+    flex: 1;
+    padding-left: 15px;
+    margin: 0;
+    font-family: 'bradley hand', Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header nav {
+    flex:2;
+}
+
+header ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* VIDE */
+
+.vide {
+    height: 100vh;
+}
+
+/* MAIN */
+
+h2 {
+    font-family: 'bradley hand', Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 3rem;
+    margin: 0.2rem;
+}
+
+.main {
+    width: 95%;
+    margin: auto;
+}
+
+.main-first {
+    display: flex;
+}
+
+/* MAIN-FIRST */
+
+aside {
+    flex: 1;
+    max-width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-first article {
+    flex:5;
+    max-width: 80%;
+}
+
+article, aside {
+    margin: 20px 10px;
+    border: 2px solid black;
+    background-color: rgba(0, 0, 0, 0.824);
+    backdrop-filter: blur(5px);
+    padding: 20px;
+    box-shadow: 5px 5px 10px black;
+}
+
+/* Discover */
+
+#discover h3 {
+    font-size: 1.5rem;
+    padding-bottom: 2vh;
+    border-bottom: 1px solid white;
+}
+
+.disco-article {
+    display: flex;
+    flex-direction: column;
+}
+
+.disco {
+    display:flex;
+    align-items: center;
+}
+
+.disco>p:nth-child(even) {
+    flex:4;
+    text-align: center;
+    font-size: 1.1rem;
+    margin-left: 5%;
+}
+
+.disco>p:nth-child(odd) {
+    flex:4;
+    text-align: center;
+    font-size: 1.1rem;
+    margin-right: 5%;
+}
+
+.disco>img {
+    flex:1;
+    margin: 1em;
+    height: 40%;
+    width: 40%;
+    border : 3px solid black;
+    transition: ease 300ms;    
+}
+
+.disco img:hover{
+    transform : scale(1.2);
+    transition: ease 300ms;
+}
+
+
+/* Formules */
+
+.formule {
+    display: flex;
+}
+.formul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3%;
+    border: 2px solid rgb(155, 155, 155);
+    border-radius: 15px;
+}
+
+.formul p {
+    padding: 0 1em;
+}
+
+.prix {
+    padding: 1em;
+    text-align: center;
+}
+
+.tarif {
+    font-size: 2rem;;
+}
+.formule img {
+    width: 60%;
+}
+
+.formule ul {
+    padding: 0 5em;
+}
+
+.formule li {
+    list-style-type: disc;
+}
+
+.indispo{
+    list-style-type: circle !important;
+    text-decoration: line-through;
+    color: rgba(255, 255, 255, 0.488);
+}
+
+/* Ingénieurs */
+
+.guide {
+    display: flex;
+}
+
+.guid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 33%;
+    margin-top: 1.5em;
+}
+
+.guide p {
+    padding: 0 1em;
+    margin: 0em 0;
+    text-align: center;
+}
+
+.guide img {
+    width: 70%;
+    border-radius: 15px;
+    border: 8px solid rgba(0, 0, 0, 0);
+    outline: rgba(255, 255, 255, 0.488) 2px solid;
+}
+
+/* ASIDE */
+
+
+aside li {
+    list-style: none;
+    text-align: center;
+}
+
+aside h3 {
+    font-size: 1rem;
+    text-align: center;
+}
+aside img {
+    max-width: 100%;
+    padding: 1vh 0;
+}
+
+/* CONTACT */
+
+.contact {
+    display: flex;
+}
+
+.reseau {
+    display: flex;
+    max-width: 70%;
+}
+
+.reseau a {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.reseau img {
+    width: 60%;
+    padding-bottom: 2em;;
+}
+
+.form {
+    max-width: 30%;
+    flex : 1;
+}
+
+#fname, #mail, #message {
+    width: 100%;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: black;
+    text-align: center;
+    height: 3vh;
+}
