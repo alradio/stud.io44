@@ -30,6 +30,10 @@
         background-size: 200% !important;
         background-position-x: 52% !important;
     }
+
+    .vide {
+        height: 60vh !important;
+    }
     
     h1 {
         font-size: 1rem !important;
