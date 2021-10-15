@@ -29,7 +29,7 @@
     .conteneur {
         background-size: 200% !important;
         background-position-x: 52% !important;
-        background-attachment: fixed; 
+        background-attachment: fixed !important; 
     }
     
     h1 {
