@@ -20,19 +20,40 @@
     .reseau, .form {
         max-width: 100% !important;
     }
+    nav a {
+        font-size: 0.8rem !important;
+    }
 }
 
 @media screen and (max-width: 576px){
+    .conteneur {
+        background-size: 200% !important;
+        background-position-x: 52% !important;
+    }
+    
+    h1 {
+        font-size: 1rem !important;
+    }
+
     aside {
         display: none !important;
     }
 
     nav a {
-        font-size: 0.8rem !important;
+        font-size: 0.4rem !important;
     }
     
     #discover {
         max-width: 100%;
+    }
+
+    .disco img {
+        width: 80% !important;
+        height: 80% !important;
+    }
+    
+    .formule ul {
+        padding: 0 2em !important;
     }
 }
 
